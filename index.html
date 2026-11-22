@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Talkadly – Unduh Aplikasi Chat Simpel dan Privat</title>
 <meta name="description" content="Talkadly adalah aplikasi chatting simpel dengan privasi tinggi. Chat tidak mudah diintip dan aplikasi tidak bisa dibuka sembarang orang. Unduh APK untuk Android.">
-<meta name="keywords"
-content="Talkadly Download">
-<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#111827">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
@@ -181,6 +178,13 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:28px 0 40px;text
 
         <div class="picker" role="radiogroup" aria-label="Pilih versi APK">
           <label class="opt">
+            <input type="radio" name="abi" value="beta_talkadly">
+            <span class="opt-body">
+              <span class="dot"></span>
+              <span><span class="opt-title">beta</span><br><span class="opt-desc">Untuk HP 64-bit. Cocok untuk kebanyakan HP Android terbaru.</span></span>
+            </span>
+          </label>
+          <label class="opt">
             <input type="radio" name="abi" value="arm64-v8a">
             <span class="opt-body">
               <span class="dot"></span>
@@ -220,8 +224,8 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:28px 0 40px;text
 
 <script>
   var files = {
-    "beta": "beta_talkadly.apk",
-    "arm64": "talkadly_arm64-v8a.apk
+    "beta": "beta_talkadly",
+    "arm64-v8a": "talkadly_arm64-v8a.apk",
     "armeabi-v7a": "talkadly_armeabi-v7a.apk"
   };
   var btn = document.getElementById("dl");
